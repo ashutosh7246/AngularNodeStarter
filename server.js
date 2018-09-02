@@ -68,7 +68,7 @@ mongoose.connect(dbconfig.database, {keepAlive: true, useNewUrlParser: true});
 
 //on database connection
 mongoose.connection
-    .once('open', () => console.log('Connected to STOYL Brain database instance.'))
+    .once('open', () => console.log('Connected to database instance.'))
     .on('error', error => console.log('Error connecting to MongoLab: ', error));
 
 app.get('*', (req, res) => {
