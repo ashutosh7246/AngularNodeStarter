@@ -1,0 +1,60 @@
+<div id="body" style="width:100%;background-color: #F5F5F5;padding-top:5%;padding-bottom:5%;">
+    <div style="
+          -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+          -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+          width: 90%;
+          margin: 0 auto;
+          border-radius: 10px;
+          overflow:hidden;
+          ">
+      <div style="display: table; width: 100%;margin:0 auto;font-size: 1em;font-weight: 700;background: #e0e0e0;margin-top:initial;border-radius: 10px 10px 0 0;padding: 15px;color: white;font-family: 'Roboto', sans-serif;">
+        <img style="margin:10px; display:table-cell; height: 30px;" src="<%= logoUrl %>" />
+        <!-- <span style="display: table-cell;vertical-align: middle;">HelpMeAux</span> -->
+        <div style="display: table-cell;width: 100%;"></div>
+      </div>
+      <div style="width: auto;margin:0 auto;color: #444444;font-size: 15px;background-color: #FFFFFF;margin-top:initial;border-radius: 0 0 10px 10px;padding: 15px;color: #444444;font-family: 'Roboto', sans-serif;">
+        <div>
+          <p>
+            Hi
+            <b><%= firstName %></b>,
+          </p>
+          <p>
+            Your password has been updated successfully.
+            <ul>
+              <li>Your new password is
+                <b>
+                  <%= newpass %>
+                </b>
+              </li>
+            </ul>
+            <br> We recommend you to change your password after you sign-in.
+            <br> Here are some tips to help you create a strong password:
+            <ul>
+              <li>Make sure your password is at least eight characters in length.</li>
+              <li>Combine numbers and letters, and don't include commonly used words.</li>
+              <li>Select a word or acronym and insert numbers between some of the letters.</li>
+              <li>Include punctuation marks.</li>
+              <li>Mix capital and lowercase letters.</li>
+              <li>Your password should not be same as your last six passwords.</li>
+            </ul>
+  
+            For your security, we recommend that you don't reuse passwords associated with your email address or any other type of account.
+            Additionally, if you enter your original password as your new password, you may trigger an error message. Create
+            an entirely new password the next time you sign in.
+            <br>
+            <br> Please click the
+            <a href=" ">link</a> to change your password.
+          </p>
+          <p style="padding-top:20px">
+            Thanks &amp; Regards,
+            <br/> REACT DEMO Team
+            <br/>
+          </p>
+          <p style="color:#939393">
+            Note: This is an auto-generated mail. Please do not reply.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>

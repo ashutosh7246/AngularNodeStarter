@@ -1,0 +1,10 @@
+/node_modules
+/brainClient/node_modules
+/dist
+/distBrain
+/distBrain.zip
+/.vscode
+/brainClient/package-lock.json
+package-lock.json
+dump.rdb
+dist/

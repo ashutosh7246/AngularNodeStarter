@@ -1,0 +1,47 @@
+<div id="body" style="width:100%;background-color: #F5F5F5;padding-top:5%;padding-bottom:5%;">
+    <div style="
+          -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+          -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+          width: 90%;
+          margin: 0 auto;
+          border-radius: 10px;
+          overflow:hidden;
+          ">
+        <div style="display: table; width: 100%;margin:0 auto;font-size: 1em;font-weight: 700;background: #e0e0e0;margin-top:initial;border-radius: 10px 10px 0 0;padding: 15px;color: white;font-family: 'Roboto', sans-serif;">
+            <img style="margin:10px; display:table-cell; height: 30px;" src="<%= logoUrl %>" />
+            <!-- <span style="display: table-cell;vertical-align: middle;">HelpMeAux</span> -->
+            <div style="display: table-cell;width: 100%;"></div>
+        </div>
+        <div style="width: auto;margin:0 auto;color: #444444;font-size: 15px;background-color: #FFFFFF;margin-top:initial;border-radius: 0 0 10px 10px;padding: 15px;color: #444444;font-family: 'Roboto', sans-serif;">
+            <div>
+                <p>
+                    Hi
+                    <b>
+                        <%= firstName %>
+                    </b>,
+                </p>
+                <p>
+                    We have received a request to reset your REACT DEMO password. If you did not put this request,
+                    <a href=" ">contact us</a> immediately.
+                    <ul>
+                        <li>Your new password is
+                            <b>
+                                <%= newpass %>
+                            </b>
+                        </li>
+                    </ul>
+                    <br> You will need to update your password after you sign-in.
+                </p>
+                <p style="padding-top:20px">
+                    Thanks &amp; Regards,
+                    <br/> REACT DEMO Team
+                    <br/>
+                </p>
+                <p style="color:#939393">
+                    Note: This is an auto-generated mail. Please do not reply.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

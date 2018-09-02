@@ -1,0 +1,93 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Stoyl Brain",
+        "description": "Open API Specification for Stoyl Brain"
+    },
+    "schemes": [
+        "http"
+    ],
+    "host": "192.168.2.29:4000",
+    "basePath": "/",
+    "paths": {
+        "/products/getSTOYLProductByProductId/{productId}": {
+            "get": {
+                "summary": "Gets a stoyl product",
+                "tags": ["Products"],
+                "description": "Returns a single stoyl product for its productId",
+                "parameters": [
+                    {
+                        "name": "productId",
+                        "in": "path",
+                        "required": true,
+                        "description": "The product's productId",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A Person",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "approvedForCustomerUsage": {
+                                    "type": "boolean"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "productId": {
+                                    "type": "string"
+                                },
+                                "stoylProductId": {
+                                    "type": "string"
+                                },
+                                "_id": {
+                                    "type": "string"
+                                },
+                                "productVersions": {
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "isCurrentVersion": {
+                                                "type": "boolean"
+                                            },
+                                            "isNextVersion": {
+                                                "type": "boolean"
+                                            },
+                                            "isPriorVersion": {
+                                                "type": "string"
+                                            },
+                                            "releaseDate": {
+                                                "type": "string"
+                                            },
+                                            "version": {
+                                                "type": "string"
+                                            },
+                                            "_id": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request."
+                    },
+                    "401": {
+                        "description": "Authorization information is missing or invalid."
+                    },
+                    "404": {
+                        "description": "Not found."
+                    },
+                    "500": {
+                        "description": "Unexpected error."
+                    }
+                }
+            }
+        }
+    }
+}

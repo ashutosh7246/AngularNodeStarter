@@ -1,0 +1,125 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header card-header-danger btn-custom">
+                        <h4 class="card-title">Hello...!</h4>
+                        <p class="card-category">Thanks for showing interest in us</p>
+                    </div>
+                    <div class="card-body">
+                        <form role="form" [formGroup]="signForm">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                      <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="First Name"  type="text" [formControl]="signForm.controls['firstName']">
+                                      </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                      <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Last Name"  type="text" [formControl]="signForm.controls['lastName']">
+                                      </mat-form-field>
+                                    </div>
+                                </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Email"  type="email" [formControl]="signForm.controls['email']">
+                                  </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Password"  type="password" [formControl]="signForm.controls['password']">
+                                  </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Confirm Password"  type="password" [formControl]="signForm.controls['confirmPassword']">
+                                  </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button (click)="onRegister()" mat-raised-button type="submit" class="btn btn-danger btn-custom" style="width:100%;">Register</button>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button mat-raised-button class="btn btn-danger btn-custom" (click)="backToLogin()" style="width:100%;">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+  <!-- <div class="login-page" [@routerTransition]>
+    <div *ngIf="loading" class="loading-overlay-fixed">
+        <span></span>
+        <img src="assets/images/stoyl-loader.gif">
+    </div>
+    <div class="row">
+        <div class="col-md-4 push-md-4">
+            <img src="assets/images/logo.png" width="150px" class="user-avatar" />
+            <h1>STOYL
+                <span style="color:red">BRAIN</span>
+            </h1>
+            <form role="form" [formGroup]="loginForm">
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="email" [formControl]="loginForm.controls['email']" class="form-control input-underline input-lg" id="email"
+                            placeholder="Email">
+                        <span *ngIf="loginForm.controls['email'].hasError('required') && loginForm.controls['email'].touched" class="error-tooltiptext">
+                            <div class="msgcontainer">
+                                <span class="errormsg">Please enter email address</span>
+                            </div>
+                        </span>
+                        <span *ngIf="loginForm.controls['email'].hasError('email') && !loginForm.controls['email'].hasError('required') && loginForm.controls['email'].touched"
+                            class="error-tooltiptext">
+                            <div class="msgcontainer">
+                                <span class="errormsg">Please enter valid email address</span>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="form-group">
+                        <input [formControl]="loginForm.controls['password']" type="password" class="form-control input-underline input-lg" id="password"
+                            placeholder="Password">
+                        <span *ngIf="loginForm.controls['password'].hasError('required') && loginForm.controls['password'].touched" class="error-tooltiptext">
+                            <div class="msgcontainer">
+                                <span class="errormsg">Please enter password</span>
+                            </div>
+                        </span>
+                        <span *ngIf="loginForm.controls['password'].hasError('minlength') && !loginForm.controls['password'].hasError('required') && loginForm.controls['password'].touched"
+                            class="error-tooltiptext">
+                            <div class="msgcontainer">
+                                <span class="errormsg">Password should contain minimum 6 characters</span>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <button class="btn rounded-btn" (click)="authenticate()" [disabled]="!loginForm.valid"> Log in </button>
+                <button class="btn rounded-btn" (click)="forgotPassword()"> Forgot Password </button>
+            </form>
+        </div>
+    </div>
+</div> -->
