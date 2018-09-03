@@ -16,5 +16,4 @@ exports.get = function get(env) {
         },
         specific: configProd[env] || configDev.default
     }
-    // return configProd[env] || configDev.default;
 }

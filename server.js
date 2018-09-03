@@ -18,10 +18,6 @@ const appRoutes = require('./server/config/routes'); // Import the application e
 const helmet = require('helmet');
 const compression = require('compression');
 
-// For testing
-var config = require("./server/config/config.js").get(process.env.NODE_ENV);
-// For testing
-
 //Import swagger
 var swaggerUi = require('swagger-ui-express'),
 swaggerDocument = require('./swagger.json');
@@ -79,7 +75,7 @@ app.get('*', (req, res) => {
 var server;
 if (process.env.SECURE) {
     // For Secure Connection over HTTPS
-    server = http.createServer(app);
+    server = https.createServer(app);
 } else {
     // For HTTP connection
     server = http.createServer(app);

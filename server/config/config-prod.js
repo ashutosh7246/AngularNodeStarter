@@ -1,6 +1,6 @@
 var config = {
   default: {
-    database:'mongodb://ashutosh:vivla1@ds131942.mlab.com:31942/reactjs-nodejs-starter',
+    database:'', // give your MLAB DB path eg: `mongodb://<user>:<password>@ds131942.mlab.com:31942/<dbname>`
     environment: {
       host: 'reactjs-nodejs-demo.com',
       sjclKey: 'ashutosh@123'
