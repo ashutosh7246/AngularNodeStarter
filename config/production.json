@@ -1,0 +1,12 @@
+{
+    "Brain": {
+        "dbConfig": {
+            "connection": "mongodb://sb_interface:Success2018@ds245277.mlab.com:45277/brain_prod",
+            "saltIteration": 10,
+            "secret": "schumacher"
+        },
+        "appConfig": {
+            "port": "4001"
+        }
+    }
+}

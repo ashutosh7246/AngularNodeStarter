@@ -1,0 +1,12 @@
+{
+    "brain": {
+        "dbConfig": {
+            "connection": "mongodb://stoylAdmin:gavaskar@ds139884.mlab.com:39884/stoyl_brain",
+            "saltIteration": 10,
+            "secret": "tendulkar"
+        },
+        "appConfig": {
+            "port": 4100
+        }
+    }
+}
